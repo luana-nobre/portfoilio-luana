@@ -1,0 +1,90 @@
+html, body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    height: 100%; /* Garante que o gradiente cubra toda a página */
+    background: linear-gradient(to bottom, #161616, #000000);
+    background-attachment: fixed; /* Mantém o gradiente fixo */
+}
+
+
+.textPortfolio {
+    color: white;
+}
+
+.gallery {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 1000px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.gallery img:hover {
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* page1 */
+
+.page-content {
+    text-align: center;
+    margin-top: 50px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+/* paginas */
+
+.paginas {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.paginas img {
+    width: 1000px;
+    height: auto;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.link-container {
+    position: relative;
+    display: inline-block;
+}
+
+.link-container .link {
+    position: absolute;
+    top: 55%; /* Centraliza na vertical */
+    right: 54%; /* Centraliza na horizontal */
+    transform: translate(-50%, -50%); /* Garante que o link fique no centro da imagem */
+    font-size: 20px;
+    color: white; /* Ajuste a cor conforme necessário */
+    text-decoration: none;   
+}
