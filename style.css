@@ -79,12 +79,20 @@ button:hover {
     display: inline-block;
 }
 
-.link-container .link {
+.link-container .linkhub {
+    position: absolute;
+    top: 55%; /* Centraliza na vertical */
+    right: 60%; /* Centraliza na horizontal */
+    transform: translate(-50%, -50%); /* Garante que o link fique no centro da imagem */
+    font-size: 20px;
+    color: white; /* Ajuste a cor conforme necessário */    
+}
+
+.link-container .linkapp {
     position: absolute;
     top: 55%; /* Centraliza na vertical */
     right: 54%; /* Centraliza na horizontal */
     transform: translate(-50%, -50%); /* Garante que o link fique no centro da imagem */
     font-size: 20px;
-    color: white; /* Ajuste a cor conforme necessário */
-    text-decoration: none;   
+    color: white; /* Ajuste a cor conforme necessário */ 
 }
